@@ -19,3 +19,4 @@ vendor/
 *.tfvars
 terraform.tfstate*
 !data/parity/.gitkeep
+config/app.yml
