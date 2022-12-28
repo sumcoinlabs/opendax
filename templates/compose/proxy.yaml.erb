@@ -5,8 +5,8 @@ services:
     restart: always
     image: traefik:2.1.8
     ports:
-      - "80:80"
-      - "443:443"
+      - "127.0.0.1:8080:80"
+      - "127.0.0.1:4430:443"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       <%- if @config['ssl']['enabled'] -%>
